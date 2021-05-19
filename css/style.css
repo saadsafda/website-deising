@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap");
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  color: #616971;
+}
+
+/*============= TOP BAR HEADER =============*/
+.topbar {
+  background-color: #7aaee4;
+  height: 2.8rem;
+  padding: 0.5rem 0;
+}
+
+.topbar a {
+  color: #000000;
+}
+
+.topbar a:hover {
+  color: #ffffff;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar-brand img {
+  height: 3rem;
+  border-radius: 100px;
+  position: absolute;
+  left: 160px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar-brand h1 {
+  font-family: "Vampiro One", cursive;
+}
+
+.nav-item {
+  padding: 0.5rem;
+}
+
+.nav-link {
+  color: #5b5555 !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #4981b7 !important;
+}
+
+/*============= CAROUSEL =============*/
+#carousel {
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+  max-height: 28rem !important;
+}
+
+.fa-chevron-left {
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 300px;
+}
+.fa-chevron-right {
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 300px;
+}
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item-activ {
+  transition: transform 0.2s ease;
+}
+/*-- Carousel Content --*/
+.caruosel-caption {
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%);
+  text-transform: uppercase;
+}
+
+.rowe {
+  position: absolute;
+  top: 29%;
+  left: 20%;
+}
+
+.bg-custom {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 0px 230px;
+  border-radius: 10px;
+}
+
+.caruosel-caption h1 {
+  font-size: 3.8rem;
+  text-align: center;
+  padding: 3px 9px;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 1);
+}
+
+.caruosel-caption h3 {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 1);
+}
+
+.border-primary {
+  border-top: 0.2rem solid #4981b3 !important;
+}
+
+.btn-lg {
+  border-radius: 0;
+  margin: 0px 0px 0px 44px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-width: medium;
+}
+
+.btn-danger {
+  background-color: #ac2615;
+  border: 0.05rem solid #ac2615;
+}
+
+.btn-primary {
+  background-color: #4981b3;
+  border: 0.05rem solid #4981b3;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #68a0d2 !important;
+  border: 0.05rem solid #68a0d2 !important;
+}
+
+.text-dark {
+  position: relative;
+  top: 890px;
+}
+
+.border-buttom {
+  position: relative;
+  top: 860px;
+}
+
+.leade {
+  position: relative;
+  top: 860px;
+  font-size: 22px;
+}
+
+.col-md-4 img {
+  position: relative;
+  top: 1px;
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+.my-4 {
+  position: relative;
+  bottom: -850px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.p {
+  font-size: 16px;
+}
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed {
+  background-image: url("../img/matrix.jpg");
+}
+
+.fixed-background {
+  padding: 10rem 0;
+}
+/*-- Emoji Navbar --*/
+
+/*============= FOOTER =============*/
+
+/*============= SOCKET =============*/
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 119998px) {
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000 !important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999 !important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
